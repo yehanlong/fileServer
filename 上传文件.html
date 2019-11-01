@@ -1,0 +1,16 @@
+<html><head>
+    <title>上传文件</title></head>
+
+<body>
+
+<h1>上传文件</h1>
+<p>注意：先压缩成zip文件。文件名中不能含"."，会根据文件名自动创建目录<p>
+<p>优先传html版本！！</p>
+<p>请勿上传无用文件或者大文件！ <p>
+
+<form enctype="multipart/form-data" action="http://8888888:1111/upload" method="post">
+  <input type="file" name="uploadfile" />
+  <input type="hidden" name="token" value="{{.}}"/>
+  <input type="submit" value="upload" /></form>
+</body>
+</html>
